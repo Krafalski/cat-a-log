@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  background: url(../assets/regal.png);
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+  max-height: 50px;
+}
+
+
+.card > div {
+  background: hsla(360, 50%, 50%, 0.5);
+  margin-bottom: .5em;
+  border: 1px solid indigo;
+  padding: .5em;
+}
+
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
