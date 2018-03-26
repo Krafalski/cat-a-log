@@ -6,10 +6,11 @@ body {
 }
 
 img {
-  max-width: 50%;
-  display: block;
+  width: 90%;
+  display: inline-block;
   margin: auto;
-  max-height: 50px;
+  vertical-align: center;
+  max-height: 250px;
 }
 
 
@@ -23,8 +24,49 @@ img {
 
 h1, h2, h3, h4, h5 {
   text-align: center;
+  vertical-align: center;
+  padding: 0 0.5em;
 }
 
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+  color: antiquewhite;
+}
 h1 {
   font-size: 3em;
+  text-shadow: 2px 2px 4px #ddd;
+}
+
+input{
+  padding: .5em;
+  margin: .5em;
+}
+
+.left,  .right {
+  display: inline-block;
+  width: 49%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* * {
+  border: 1px solid indigo;
+} */
+
+
+button {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+input[type=submit], button {
+    background: hsla(360, 50%, 50%, 0.7);
+    padding: .5em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px black;
+}
+
+input[type=submit]:hover, button:hover {
+    background: hsla(360, 50%, 50%, 0.9);
+    color: antiquewhite;
 }

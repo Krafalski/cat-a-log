@@ -22,10 +22,14 @@ class Main extends React.Component {
         // console.log(cat.id, index);
         return(
           <div key={cat.id.toString()}>
-            <h2>Name: {cat.name} </h2>
-            <h3>Age: {cat.age}</h3>
-            <h4>Color: {cat.color}</h4>
-            <img src={cat.image} />
+            <div className="left">
+              <h2>Name: {cat.name} </h2>
+              <h3>Age: {cat.age}</h3>
+              <h4>Color: {cat.color}</h4>
+            </div>
+            <div  className="right">
+              <img src={cat.image} />
+            </div>
             <button onClick={deleteCat} id={cat.id}> delete</button>
           </div>
         )
@@ -105,8 +109,11 @@ class CreateACat extends React.Component  {
         <label>
         Name:
           <input type="text" name="name" onChange={this.handleChange} />
-          <input type="text" name="age" onChange={this.handleChange} />
+        Age:
+          <input type="number" name="age" onChange={this.handleChange} /><br/>
+        Color:
           <input type="text" name="color" onChange={this.handleChange} />
+        Image:
           <input type="text" name="image" onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
